@@ -9,6 +9,7 @@ using MusicStoreMVC_2.Models;
 
 namespace MusicStoreMVC_2.Controllers
 {
+    [Authorize(Roles = "Administrator")]
     public class StoreManagerController : Controller
     {
         private MusicStoreEntities db = new MusicStoreEntities();

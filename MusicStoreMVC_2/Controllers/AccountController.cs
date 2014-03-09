@@ -5,7 +5,6 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
-using Mvc3ToolsUpdateWeb_Default.Models;
 using MusicStoreMVC_2.Models;
 
 namespace MusicStoreMVC_2.Controllers
@@ -16,10 +15,10 @@ namespace MusicStoreMVC_2.Controllers
         private void MigrateShoppingCart(string UserName)
         {
             // Associate shopping cart items with logged-in user
-            var cart = ShoppingCart.GetCart(this.HttpContext);
+           // var cart = ShoppingCart.GetCart(this.HttpContext);
 
-            cart.MigrateCart(UserName);
-            Session[ShoppingCart.CartSessionKey] = UserName;
+            //cart.MigrateCart(UserName);
+           // Session[ShoppingCart.CartSessionKey] = UserName;
         }
 
         //
