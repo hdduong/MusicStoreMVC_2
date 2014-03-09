@@ -16,6 +16,8 @@ namespace MusicStoreMVC_2
     {
         protected void Application_Start()
         {
+            System.Data.Entity.Database.SetInitializer(new MusicStoreMVC_2.Models.SampleData());
+
             AreaRegistration.RegisterAllAreas();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
